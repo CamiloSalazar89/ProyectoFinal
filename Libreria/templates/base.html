@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-  <title>% block titulo % CatDogs PetShop % endblock %</title>
+  <title>{% block titulo %} CatDogs PetShop {% endblock %}</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -17,10 +17,10 @@
 <body>
     <nav class="navbar navbar-expand navbar-light bg-light">
         <div class="nav navbar-nav">
-            <a class="nav-item nav-link active" href="#" aria-current="page">Home</a>
-            <a class="nav-item nav-link" href="#" aria-current="page">Productos</a>
-            <a class="nav-item nav-link" href="#" aria-current="page">Blog</a>
-            <a class="nav-item nav-link" href="#" aria-current="page">Contactanos</a>
+            <a class="nav-item nav-link active" href="#" aria-current="{% url 'inicio' %}">Home</a>
+            <a class="nav-item nav-link" href="#" aria-current="{% url 'producto' %}">Productos</a>
+            <a class="nav-item nav-link" href="#" aria-current="{% url 'blog' %}">Blog</a>
+            <a class="nav-item nav-link" href="#" aria-current="{% url 'contacto' %}">Contactanos</a>
             
         </div>   
     </nav>
@@ -29,7 +29,7 @@
         <div class = "row">
             <div class = "col-12">
                 <div class = "text-center">
-                    <h1> {% block Contenido %} Siguenos en nuestras redes sociales {% endblock %} </h1>
+                    <h1> {% block Content %} Siguenos en nuestras redes sociales {% endblock %} </h1>
                 </div>
             </div>
         </div>

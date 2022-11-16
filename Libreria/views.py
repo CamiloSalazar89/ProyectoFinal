@@ -12,3 +12,10 @@ def home (request):
 def producto(request):
     return render(request, 'producto/index.html')
 
+def blog (request):
+    return render(request, 'paginas/blog.html')
+
+def contacto (request):
+    return render(request, 'paginas/contacto.html')
+
+    
