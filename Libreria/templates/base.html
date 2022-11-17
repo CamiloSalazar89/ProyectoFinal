@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {% load static %}
 <!doctype html>
 <html lang="en">
@@ -141,4 +142,137 @@
   </script>
 </body>
 
+=======
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>{% block titulo %} CatDogs PetShop {% endblock %}</title>
+
+</head>
+<body>
+
+    <div class="head">
+
+        <div class="logo">
+            <a href="#">CatDogs_Chile</a>
+        </div>
+
+        <nav class="navbar">
+            <a href="{% url 'inicio' %}">Inicio</a>
+            <a href="{% url 'producto' %}">Productos</a>
+            <a href="{% url 'blog' %}">Blog</a>
+            <a href="{% url 'contacto' %}">Contactanos</a>
+        </nav>
+
+    </div>
+
+    <header class="content header">
+        <h2 class="title">Inicio</h2>
+        <p>
+            ¿Qué es una mascota? 
+Lo que comúnmente llamamos mascota es un animal que ha sido domesticado por el ser humano para que viva con él. En otras palabras, una mascota es un animal que ha aprendido a vivir con personas, a comunicarse con ellas y ha compartir tiempo y espacio con ellas. Por ejemplo, los perros fueron domesticados a partir de lobos grises y los gatos comunes fueron domesticados a partir de una especie de gato salvaje que habitaba la zona de Oriente Medio y el norte de África. 
+La domesticación es un proceso en el que los humanos seleccionan animales por sus rasgos y temperamentos específicos y continúan criando estos animales hasta que hay una población de animales con esas características deseadas. Con el tiempo, los animales se vuelven más dóciles y se convierten en compañeros de los humanos. Los perros y los gatos de compañía son el resultado de una selección que se basa en características idóneas y evaluadas por los seres humanos durante muchos años. En cambio, un animal salvaje no cumple con estas características y, por ende, no ha sido domesticado por ellos.
+        </p>
+
+        <div class="btn-home">
+            <a href="#" class="btn">Saber mas</a>
+            
+        </div>
+    </header>
+
+    <section class="content sau">
+
+        <h2 class="title">Productos</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing 
+            elit. Veritatis excepturi dolore, harum asperiores 
+            cupiditate officiis quia odit reiciendis quidem iure 
+            architecto laudantium 
+            nihil saepe pariatur vel labore molestias consectetur veniam?</p>
+        
+        <div class="box-container">
+
+            <div class="box">
+                <i class="fab fa-facebook"></i>
+                <h3>Lorem</h3>
+                <p>labore molestias consectetur veniam</p>
+            </div>
+            <div class="box">
+                <i class="fab fa-apple"></i>
+                <h3>Lorem</h3>
+                <p>labore molestias consectetur veniam</p>
+            </div>
+            <div class="box">
+                <i class="fab fa-android"></i>
+                <h3>Lorem</h3>
+                <p>labore molestias consectetur veniam</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="content about">
+
+        <h2 class="title">Blog</h2>
+        <p>Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Ut soluta similique 
+            quia reprehenderit eligendi aliquam. Sit 
+            odio impedit quibusdam. Velit corporis, 
+            optio debitis quidem ex ipsam rerum dolorem autem sequi.
+        </p>
+
+        <a href="#" class="btn">Saber mas</a>
+
+    </section>
+
+    <section class="content price">
+
+        <article class="contain">
+            <h2 class="title">Trabaja CON Nosotros</h2>
+            <p>Unete a este equipo, que le tiene un gran cariño a nuestros compañeros de cuatro patas!!!
+            </p>
+
+            <a href="#" class="btn">Saber mas!!!</a>
+
+        </article>
+
+    </section>
+
+    <section class="content contact">
+        <h2 class="title">Contacto</h2>
+        <p>Contacto@CatDogs.cl</p>
+        <div class="box-container">
+
+            <div class="box">
+                <i class="fab fa-facebook"></i>
+                <h3>CatDogs_Chile</h3>
+                <p>Siguenos y unete a la comunidad!!!</p>
+            </div>
+            <div class="box">
+                <i class="fab fa-instagram"></i>
+                <h3>CatDogs_Chile</h3>
+                <p>Siguenos y unete a la comunidad!!!</p>
+            </div>
+            <div class="box">
+                <i class="fab fa-linkedin"></i>
+                <h3>CatDogs PetShops</h3>
+                <p>Siguenos y unete a la comunidad!!!</p>
+            </div>
+
+        </div>
+        <figure class="map">
+            <img src="img/mapa.png" height="220px" width="100%" alt="mapa">
+        </figure>
+    </section>
+    
+</body>
+>>>>>>> a7435111fc776da5c4fb320196812ff6bfd6fdd1
 </html>
