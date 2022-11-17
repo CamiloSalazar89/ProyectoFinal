@@ -15,4 +15,14 @@ def blog (request):
 def contacto (request):
     return render(request, 'paginas/contacto.html')
 
+def crear (request):
+    return render(request, 'producto/crear.html')
+
+def editar (request):
+    return render(request, 'producto/editar.html')
+
+
+
+
+
     

@@ -6,7 +6,7 @@
 
 <div class="card">
     <div class="card-header">
-        Lista de Productos
+        <a name="" id="" class="btn btn-success" href="{% url 'crear' %}" role="button">Agregar producto</a>
     </div>
     <div class="card-body">
         <h4 class="card-title">Productos</h4>
@@ -29,7 +29,7 @@
                         <td>Kong</td>
                         <td>imagen.jpg</td>
                         <td> Juguete de larga duracion, y entretencion para los amigos de la casa</td>
-                        <td> Editar | Borrar </td>
+                        <td> <a name="" id="" class="btn btn-info" href="{% url 'editar' %}" role="button">Editar</a>|<a name="" id="" class="btn btn-danger" href="#" role="button">Borrar</a> </td>
                     </tr>
                 </tbody>
             </table>
