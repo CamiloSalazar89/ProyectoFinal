@@ -3,10 +3,16 @@
 <html lang="en">
 
 <head>
-  <title>{% block titulo %} CatDogs PetShop {% endblock %}</title>
+  
   <!-- Required meta tags -->
   <meta charset="utf-8">
+  <meta http-equiv=" X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  
+  
+  <title>{% block titulo %} CatDogs PetShop {% endblock %}</title>
 
   <!-- Bootstrap CSS v5.2.1 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -15,6 +21,14 @@
 </head>
 
 <body>
+
+    <div class="head">
+
+      <div class="logo">
+        <a href="#">Logo</a>
+      </div>
+    </div>
+
     <nav class="navbar navbar-expand navbar-light bg-light">
         <div class="nav navbar-nav">
             <a class="nav-item nav-link active" href="#" aria-current="{% url 'inicio' %}">Inicio</a>
@@ -25,17 +39,87 @@
         </div>   
     </nav>
 
-    <div class = "container">
-        <div class = "row">
-            <div class = "col-12">
-                <div class = "text-center">
-                    <h1> {% block Content %} Siguenos en nuestras redes sociales {% endblock %} </h1>
-                </div>
-            </div>
-        </div>
-    </div>
-    
+    <header class="content header">
 
+      <h2 class=" title"> Inicio</h2>
+
+      <p>lorem ipsum dolor
+        
+      </p>
+
+      <div class="btn-home">
+        <a href="#" class='btn'> Saber mas </a>
+        <a href="#" class='btn'> Saber mas </a>
+      
+      </div>
+
+      <section class="content sau">
+
+        <h2 class='title'>Productos</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+
+        <div class = 'box'>
+          <i class='fab fa-angular'></i>
+          ><h3>Lorem .</h3>
+          ><p>Algo para agregar</p>
+        </div>
+        
+        <div class = 'box'>
+          <i class='fab fa-apple'></i>
+          ><h3>Lorem </h3>
+          ><p>Algo para agregar</p>
+        </div>
+
+        <div class = 'box'>
+          <i class='fab fa-android'></i>
+          ><h3>Lorem </h3>
+          ><p>Algo para agregar</p>
+        </div>
+
+
+        
+         
+        </div>
+          
+     
+      </section>
+      <section class="content about">
+        <h2 class='title'>Productos</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+
+        ><a href="#" class="content price">
+          <article class="contain">
+            <h2 class='title'>Precio</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <a href="#" class="btn">Saber precio</a>
+
+          </article>
+
+        </a>
+      
+      </section>
+
+    </section>
+    <section class="content contact">
+      <h2 class='title'>Contacto</h2>
+      <p>+56985971658</p>
+      <figure class="map">
+        <img src="img/mapa.png" height="220px" width="100%" alt="mapa">
+      </figure>   
+      
+
+       
+    </section>
+
+
+<h1> {% block Content %} Siguenos en nuestras redes sociales {% endblock %} </h1>
+          <i class='fab fa-facebook'></i><i class='fab fa-instagram'></i> <i class='fab fa-linkedin'></i>
 
 
   <header>
