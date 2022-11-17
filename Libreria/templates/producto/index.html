@@ -14,6 +14,8 @@
         <div class="table-responsive-md">
             <table class="table table-primary">
                 <thead>
+
+                    {% for producto in productos %}
                     <tr>
                         <th scope="col">ID</th>
                         <th scope="col">Titulo</th>
@@ -31,6 +33,7 @@
                         <td> Juguete de larga duracion, y entretencion para los amigos de la casa</td>
                         <td> <a name="" id="" class="btn btn-info" href="{% url 'editar' %}" role="button">Editar</a>|<a name="" id="" class="btn btn-danger" href="#" role="button">Borrar</a> </td>
                     </tr>
+                    {% endfor %}
                 </tbody>
             </table>
         </div>
