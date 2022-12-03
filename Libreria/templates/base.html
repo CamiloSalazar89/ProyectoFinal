@@ -1,160 +1,16 @@
-<<<<<<< HEAD
-{% load static %}
-<!doctype html>
-<html lang="en">
 
-<head>
-  
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta http-equiv=" X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
-  
-  
-  <title>{% block titulo %} CatDogs PetShop {% endblock %}</title>
-
-  <!-- Bootstrap CSS v5.2.1 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-
-</head>
-
-<body>
-
-    <div class="head">
-
-      <div class="logo">
-        <a href="#">Logo</a>
-      </div>
-    </div>
-
-    <nav class="navbar navbar-expand navbar-light bg-light">
-        <div class="nav navbar-nav">
-            <a class="nav-item nav-link active" href="#" aria-current="{% url 'inicio' %}">Inicio</a>
-            <a class="nav-item nav-link" href="#" aria-current="{% url 'producto' %}">Productos</a>
-            <a class="nav-item nav-link" href="#" aria-current="{% url 'blog' %}">Blog</a>
-            <a class="nav-item nav-link" href="#" aria-current="{% url 'contacto' %}">Contactanos</a>
-            
-        </div>   
-    </nav>
-
-    <header class="content header">
-
-      <h2 class=" title"> Inicio</h2>
-
-      <p>lorem ipsum dolor
-        
-      </p>
-
-      <div class="btn-home">
-        <a href="#" class='btn'> Saber mas </a>
-        <a href="#" class='btn'> Saber mas </a>
-      
-      </div>
-
-      <section class="content sau">
-
-        <h2 class='title'>Productos</h2>
-        <p>
-          Aqui encontraras los mejores productos para los amigos del hogar!!!
-        </p>
-
-        <div class = 'box'>
-          <i class='fab fa-angular'></i>
-          ><h3>Lorem .</h3>
-          ><p>Algo para agregar</p>
-        </div>
-        
-        <div class = 'box'>
-          <i class='fab fa-apple'></i>
-          ><h3>Lorem </h3>
-          ><p>Algo para agregar</p>
-        </div>
-
-        <div class = 'box'>
-          <i class='fab fa-android'></i>
-          ><h3>Lorem </h3>
-          ><p>Algo para agregar</p>
-        </div>
-
-
-        
-         
-        </div>
-          
-     
-      </section>
-      <section class="content about">
-        <h2 class='title'>Productos</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        </p>
-
-        ><a href="#" class="content price">
-          <article class="contain">
-            <h2 class='title'>Precio</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-            <a href="#" class="btn">Saber precio</a>
-
-          </article>
-
-        </a>
-      
-      </section>
-
-    </section>
-    <section class="content contact">
-      <h2 class='title'>Contacto</h2>
-      <p>+56985971658</p>
-      <figure class="map">
-        <img src="img/mapa.png" height="220px" width="100%" alt="mapa">
-      </figure>   
-      
-
-       
-    </section>
-
-
-<h1> {% block Content %} Siguenos en nuestras redes sociales {% endblock %} </h1>
-          <i class='fab fa-facebook'></i><i class='fab fa-instagram'></i> <i class='fab fa-linkedin'></i>
-
-
-  <header>
-    <!-- place navbar here -->
-  </header>
-  <main>
-
-  </main>
-  <footer>
-    <!-- place footer here -->
-  </footer>
-  <!-- Bootstrap JavaScript Libraries -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-  </script>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
-  </script>
-</body>
-
-=======
-{% load static %}
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% load static %}
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     
-    <title>{% block titulo %} CatDogs PetShop {% endblock %}</title>
+    <title>{% block title %} CatDogs PetShop {% endblock %}</title>
 
 </head>
 <body>
@@ -177,10 +33,8 @@
     <header class="content header">
         <h2 class="title">Inicio</h2>
         <p>
-            ¿Qué es una mascota? 
-Lo que comúnmente llamamos mascota es un animal que ha sido domesticado por el ser humano para que viva con él. En otras palabras, una mascota es un animal que ha aprendido a vivir con personas, a comunicarse con ellas y ha compartir tiempo y espacio con ellas. Por ejemplo, los perros fueron domesticados a partir de lobos grises y los gatos comunes fueron domesticados a partir de una especie de gato salvaje que habitaba la zona de Oriente Medio y el norte de África. 
-La domesticación es un proceso en el que los humanos seleccionan animales por sus rasgos y temperamentos específicos y continúan criando estos animales hasta que hay una población de animales con esas características deseadas. Con el tiempo, los animales se vuelven más dóciles y se convierten en compañeros de los humanos. Los perros y los gatos de compañía son el resultado de una selección que se basa en características idóneas y evaluadas por los seres humanos durante muchos años. En cambio, un animal salvaje no cumple con estas características y, por ende, no ha sido domesticado por ellos.
-        </p>
+            ¿Qué es una mascota?
+        
 
         <div class="btn-home">
             <a href="#" class="btn">Saber mas</a>
@@ -191,28 +45,24 @@ La domesticación es un proceso en el que los humanos seleccionan animales por s
     <section class="content sau">
 
         <h2 class="title">Productos</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing 
-            elit. Veritatis excepturi dolore, harum asperiores 
-            cupiditate officiis quia odit reiciendis quidem iure 
-            architecto laudantium 
-            nihil saepe pariatur vel labore molestias consectetur veniam?</p>
+        <p>Nesecitas variedad de articulos para tus compañeros del hogar, aqui encontraras lo que buscas!!!</p>
         
         <div class="box-container">
 
             <div class="box">
                 <i class="fab fa-facebook"></i>
-                <h3>Lorem</h3>
-                <p>labore molestias consectetur veniam</p>
+                <h3>CatDogs_Chile</h3>
+                <p>Siguenos y unete a la comunidad!!!</p>
             </div>
             <div class="box">
-                <i class="fab fa-apple"></i>
-                <h3>Lorem</h3>
-                <p>labore molestias consectetur veniam</p>
+                <i class="fab fa-instagram"></i>
+                <h3>CatDogs_Chile</h3>
+                <p>Siguenos y unete a la comunidad!!!</p>
             </div>
             <div class="box">
-                <i class="fab fa-android"></i>
-                <h3>Lorem</h3>
-                <p>labore molestias consectetur veniam</p>
+                <i class="fab fa-linkedin"></i>
+                <h3>CatDogs PetShops</h3>
+                <p>Siguenos y unete a la comunidad!!!</p>
             </div>
 
         </div>
@@ -222,11 +72,7 @@ La domesticación es un proceso en el que los humanos seleccionan animales por s
     <section class="content about">
 
         <h2 class="title">Blog</h2>
-        <p>Lorem ipsum dolor sit amet consectetur 
-            adipisicing elit. Ut soluta similique 
-            quia reprehenderit eligendi aliquam. Sit 
-            odio impedit quibusdam. Velit corporis, 
-            optio debitis quidem ex ipsam rerum dolorem autem sequi.
+        <p>Un espacio para compartir ideas  y tips para cuidar a nuestros compañeros.
         </p>
 
         <a href="#" class="btn">Saber mas</a>
@@ -236,7 +82,7 @@ La domesticación es un proceso en el que los humanos seleccionan animales por s
     <section class="content price">
 
         <article class="contain">
-            <h2 class="title">Trabaja CON Nosotros</h2>
+            <h2 class="title">Trabaja Con Nosotros</h2>
             <p>Unete a este equipo, que le tiene un gran cariño a nuestros compañeros de cuatro patas!!!
             </p>
 
@@ -269,10 +115,10 @@ La domesticación es un proceso en el que los humanos seleccionan animales por s
 
         </div>
         <figure class="map">
-            <img src="img/mapa.png" height="220px" width="100%" alt="mapa">
+            <img src="img/mapa.jpg" height="220px" width="100%" alt="mapa">
         </figure>
     </section>
     
 </body>
->>>>>>> a7435111fc776da5c4fb320196812ff6bfd6fdd1
+
 </html>

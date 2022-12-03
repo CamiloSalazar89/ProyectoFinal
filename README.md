@@ -6,3 +6,6 @@ una plataforma de ventas de insumos para mascotas y asesorias e informacion a tr
 
 se requiere de apoyo y harto entusiasmo, asi que si quieres aportar con informacion valiosa de como cuidar, alimentar, y amar mucho a tu amigo de cuatro patas esta es la pagina indicada.
 
+
+1.- Para poder ingresar como super usuario el acceso es admin y la contraseña 12345
+2.- 
